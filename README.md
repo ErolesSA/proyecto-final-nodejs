@@ -16,8 +16,6 @@ JWT (jsonwebtoken)
 
 Cors
 
-Vercel (despliegue)
-
 Postman (testing)
 
 📁 Estructura del proyecto
@@ -57,8 +55,6 @@ Crear un archivo .env en la raíz:
 PORT=3000
 JWT_SECRET=tu_clave_super_segura
 
-
-En producción (Vercel), estas variables se cargan como Secrets.
 
 🔥 Configuración de Firebase
 
@@ -152,52 +148,16 @@ Authorization: Bearer <token>
 
 Probar CRUD completo.
 
-🌐 Despliegue en Vercel
-
-Archivo vercel.json configurado:
-
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
-    }
-  ]
-}
-
-Variables de entorno en Vercel
-
-Debe crear estos Secrets:
-
-jwt_secret
-
-firebase_project_id
-
-firebase_client_email
-
-firebase_private_key
-
-Ejemplo:
-
-vercel secrets add jwt_secret tu_clave_super_segura
-
-
-Luego desplegar:
-
-vercel --prod
-
 ✅ Estado final del proyecto
 
 ✔ CRUD funcionando
 ✔ Firestore conectado
 ✔ Arquitectura por capas
 ✔ JWT implementado
+
+
+---
+
+👉 Este proyecto está bajo la licencia MIT.
 ✔ Rutas protegidas
 ✔ Despliegue en Vercel listo
