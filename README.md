@@ -159,5 +159,4 @@ Probar CRUD completo.
 ---
 
 👉 Este proyecto está bajo la licencia MIT.
-✔ Rutas protegidas
-✔ Despliegue en Vercel listo
+
