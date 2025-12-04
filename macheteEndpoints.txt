@@ -1,0 +1,63 @@
+GET     /api/products
+GET     /api/products/:id
+POST    /api/products/create
+DELETE  /api/products/:id
+POST    /auth/login
+
+----------------------------------------------------------------------------
+
+Probalo de nuevo en Postman
+
+POST → http://localhost:3000/auth/login
+
+Body:
+
+{
+  "email": "admin@empresa.com",
+  "password": "123456"
+}
+
+Si todo está bien, tiene que responder:
+
+{
+  "message": "Login exitoso",
+  "token": "Bearer eyJhbGciOi..."
+}
+
+
+
+----------------------------------------------------------------------------
+
+En Postman:
+
+👉 Pestaña Headers
+👉 Agregás:
+
+Authorization     Bearer eyJh…
+
+
+Probar crear un producto
+
+POST →
+
+http://localhost:3000/api/products/create
+
+Body (JSON):
+
+{
+  "id": "0002",
+  "category": "pokemon",
+  "name": "Charmander",
+  "description": "Figura coleccionable",
+  "sku": "PKM0001006",
+  "stock": 8,
+  "price": 4999.99
+}
+
+---------------------------------------------------------------
+
+Probar eliminar un producto
+
+DELETE →
+
+http://localhost:3000/api/products/0002
