@@ -45,7 +45,6 @@ project/
 │── .env
 │── index.js
 │── package.json
-│── vercel.json
 │── README.md
 
 🔧 Configuración del entorno
