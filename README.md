@@ -101,6 +101,7 @@ Debe incluirse el token:
 Authorization: Bearer <token>
 
 📚 API Endpoints
+
 ▶ 1. Obtener todos los productos
 
 GET /api/products
